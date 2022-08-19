@@ -16,7 +16,7 @@ let apiTest;
 async function Lire(){
 	data = '';
 	// Create a readable stream
-	var readerStream = fs.createReadStream('mbusrs.json');
+	var readerStream = fs.createReadStream('https://github.com/Aldawai/bgn-hrk/blob/main/mbusrs.json');
 	// Set the encoding to be utf8.
 	readerStream.setEncoding('UTF8');
 	// Handle stream events --> data, end, and error
