@@ -1,0 +1,29 @@
+{
+  "name": "bgn-hrk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aldawai/bgn-hrk.git"
+  },
+  "author": "Dawaï",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aldawai/bgn-hrk/issues"
+  },
+  "homepage": "https://github.com/Aldawai/bgn-hrk#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "mysql": "^2.18.1",
+    "postgres": "^3.2.4"
+  }
+}
