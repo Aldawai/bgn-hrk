@@ -31,7 +31,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 app.use(cors({
-	origin: 'http://localhost:5500',
+	origin: '*',
 	allowedHeaders: 'Content-Type'
 }));
 
@@ -40,7 +40,8 @@ let data = {"nom":"Dawaï"};
 let _PORT = 4000;
 
 app.get('/',(req,res)=>{
-    res.send(data);
+	const s = sql`SELECT * FROM plantes`;
+    res.send(s);
 });
 
 app.post('/',(req,res)=>{
@@ -50,7 +51,8 @@ app.post('/',(req,res)=>{
 	// 	}
 	// 	return console.log(result);
 	// }));
-    res.send(req.body);
+	const q = sql`SELECT * FROM plantes`;
+    res.send(q);
     console.log(req.body);
 });
 
